@@ -11,6 +11,7 @@ const TOKEN_EXPIRATION = '2h';
 // Register a new user
 const registerUser = async (req, res) => {
   try {
+    console.log("yee")
     const { username, email, password, confirmPassword, gender } = req.body;
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
